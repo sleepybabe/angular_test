@@ -1,0 +1,53 @@
+.app-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a,
+  .nav-links button {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-links a:hover,
+  .nav-links button:hover {
+    color: #a6aeb8cb;
+  }
+  
+  .active {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .logout-button {
+    background-color: transparent;
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    font-family: Arial, sans-serif; 
+  }
+  

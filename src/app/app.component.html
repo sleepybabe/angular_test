@@ -1,1 +1,14 @@
+<header class="app-header">
+  <div class="header-content">
+    <nav class="nav-links">
+      <a routerLink="/users" routerLinkActive="active">Users</a>
+      <ng-container *ngIf="!isLoggedIn; else loggedInMenu">
+        <a routerLink="/login" routerLinkActive="active">Login</a>
+      </ng-container>
+      <ng-template #loggedInMenu>
+        <button class="logout-button" (click)="logout()">Logout</button>
+      </ng-template>
+    </nav>
+  </div>
+</header>
 <router-outlet></router-outlet>
