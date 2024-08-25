@@ -1,0 +1,105 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+}
+
+.user-list {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.user-list h2 {
+    margin-top: 0;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: calc(100% - 20px);
+}
+
+.user-card:hover {
+    background-color: #f0f0f0;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #e60000;
+}
+
+.resource-list {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.resource-list h2 {
+    margin-top: 0;
+}
+
+.resource-card {
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 100px;
+    background-color: #000;
+    width: calc(100% - 20px);
+}
+
+.resource-name {
+    font-size: 18px;
+    font-weight: bold;
+}

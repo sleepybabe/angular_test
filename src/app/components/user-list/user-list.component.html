@@ -1,1 +1,26 @@
-<p>user-list works!</p>
+<div class="container">
+    <div class="columns">
+        <div class="column">
+            <div class="user-list">
+                <h2>Users</h2>
+                <div class="card-container">
+                    <div class="card user-card" *ngFor="let user of users" (click)="getUserDetails(user.id)">
+                        <p class="user-name">{{ user.first_name }} {{ user.last_name }}</p>
+                        <button class="delete-button" (click)="deleteUser(user.id); $event.stopPropagation()">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="resource-list">
+                <h2>Resources</h2>
+                <div class="card-container">
+                    <div class="card resource-card" *ngFor="let resource of resources" [ngStyle]="{'background-color': resource.color}">
+                        <p class="resource-name">{{ resource.name }} ({{resource.color}})</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

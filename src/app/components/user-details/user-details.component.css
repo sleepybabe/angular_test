@@ -1,0 +1,92 @@
+.user-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .user-details-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #dddddd;
+  }
+  
+  .user-info {
+    flex-grow: 1;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  .user-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555555;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .update-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+  }
+  
+  .update-button:hover {
+    background-color: #0056b3;
+  }
+  
